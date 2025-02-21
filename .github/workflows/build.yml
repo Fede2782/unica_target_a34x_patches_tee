@@ -131,7 +131,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull origin ${{github.ref}} --ff-only
           echo ${{ env.latest_version }} > current.${{ matrix.model }}_${{ matrix.omc }}
-          echo ${{ env.latest_version }} >> supported_bootloaders
+          echo ${{ env.latest_shortversion }} >> supported_bootloaders
           git add current.${{ matrix.model }}_${{ matrix.omc }} supported_bootloaders ${{ env.latest_shortversion }}_tee.tar
           git commit -m "${{ matrix.model }}: ${{ env.latest_version }}"
           git tag "${{ env.latest_shortversion }}_${{ matrix.omc }}"
