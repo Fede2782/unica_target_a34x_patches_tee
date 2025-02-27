@@ -4,7 +4,7 @@ on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader
     mount none /vendor/tee_eea /vendor/tee bind
 
 # SM-A346E (Asia)
-on early-fs && property:ro.boot.em.model=SM-A346E && property:ro.boot.bootloader=A346EXXU9CXK1
+on early-fs && property:ro.boot.em.model=SM-A346E && property:ro.boot.bootloader=A346EXXS9CYA2
     # TEEgris
     mount none /vendor/tee_sea /vendor/tee bind
 
