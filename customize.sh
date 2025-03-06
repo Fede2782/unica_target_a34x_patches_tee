@@ -23,6 +23,10 @@ if ! grep -q "tee_blobs" "$WORK_DIR/configs/fs_config-vendor"; then
     } >> "$WORK_DIR/configs/fs_config-vendor"
 fi
 
+EEA_VER="$(cat $FW_DIR/SM-A346B_EUX/.extracted | cut -d'/' -f1 )"
+
+sed -i "s/EEAVER/$EEA_VER/" "$WORK_DIR/vendor/etc/init/tee_blobs.rc"
+
 cp -a --preserve=all "$SRC_DIR/target/a34x/patches/tee/vendor/tee_latam" "$WORK_DIR/vendor/tee_latam"
 
 if ! grep -q "vendor/tee_latam" "$WORK_DIR/configs/file_context-vendor"; then
