@@ -123,6 +123,7 @@ jobs:
           sudo mount -o ro vendor.img vendor_mount/
           cd vendor_mount/tee
           find . -type f -exec sha256sum {} \;
+          mkdir -p ../../vendor/${{ matrix.dir }}/
           cp -a --preserve=all * ../../vendor/${{ matrix.dir }}/
           cd ../..
           sudo umount vendor_mount/
