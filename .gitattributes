@@ -1,1 +1,14 @@
 vendor/** binary
+vendor/* binary
+vendor/tee_sea/** binary
+vendor/tee_sea/driver/** binary
+vendor/tee_sea/tui/resolution_common/** binary
+vendor/tee_latam/** binary
+vendor/tee_latam/driver/** binary
+vendor/tee_latam/tui/resolution_common/** binary
+vendor/tee_sea/* binary
+vendor/tee_sea/driver/* binary
+vendor/tee_sea/tui/resolution_common/* binary
+vendor/tee_latam/* binary
+vendor/tee_latam/driver/* binary
+vendor/tee_latam/tui/resolution_common/* binary

@@ -29,12 +29,6 @@ jobs:
          #   csc: "KOO"
          #   omc: "OKR"
          #   imei: "354269781234565"
-          - model: "SM-A346E"
-            csc: "XSA"
-            omc: "OLM"
-            imei: "350386300261830"
-            dir: "tee_sea_jan"
-
 
     steps:
       - name: Checkout repo
@@ -141,7 +135,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git pull origin ${{github.ref}} --ff-only
           sed -i "/${{ env.current }}/d" supported_bootloaders || true
-          sed -i "s/${{ env.current }}/${{ env.latest_shortversion }}/" vendor/etc/init/tee_blobs.rc
+          sed -i "s/${{ env.current }}/${{ env.latest_shortversion }}/" vendor/etc/init/tee_blobs.rc || true
           echo ${{ env.latest_version }} > current.${{ matrix.model }}_${{ matrix.omc }}
           echo ${{ env.latest_shortversion }} >> supported_bootloaders
           git add current.${{ matrix.model }}_${{ matrix.omc }} supported_bootloaders vendor
