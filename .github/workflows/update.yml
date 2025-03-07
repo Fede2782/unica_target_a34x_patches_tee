@@ -25,10 +25,16 @@ jobs:
             omc: "OWO"
             imei: "350650060111117"
             dir: "tee_latam"
-         # - model: "SM-A346N"
-         #   csc: "KOO"
-         #   omc: "OKR"
-         #   imei: "354269781234565"
+          - model: "SM-A346N"
+            csc: "KOO"
+            omc: "OKR"
+            imei: "354269781234565"
+            dir: "tee_kor"
+          - model: "SM-A3460"
+            csc: "TGY"
+            omc: "OZS"
+            imei: "352496600123453"
+            dir: "tee_chn"
 
     steps:
       - name: Checkout repo
