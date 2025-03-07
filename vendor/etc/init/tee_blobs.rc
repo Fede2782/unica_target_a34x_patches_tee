@@ -13,3 +13,12 @@ on early-fs && property:ro.boot.em.model=SM-A346M && property:ro.boot.bootloader
     # TEEgris
     mount none /vendor/tee_latam /vendor/tee bind
 
+# SM-A346N (South Korea)
+on early-fs && property:ro.boot.em.model=SM-A346N && property:ro.boot.bootloader=A346NKSS9CYA2
+    # TEEgris
+    mount none /vendor/tee_kor /vendor/tee bind
+
+# SM-A3460
+on early-fs && property:ro.boot.em.model=SM-A3460 && property:ro.boot.bootloader=A3460ZHS9CYA1
+    # TEEgris
+    mount none /vendor/tee_chn /vendor/tee bind
