@@ -24,3 +24,9 @@ vendor/tee_kor/tui/resolution_common/* binary
 vendor/tee_chn/* binary
 vendor/tee_chn/driver/* binary
 vendor/tee_chn/tui/resolution_common/* binary
+vendor/tee_eea/** binary
+vendor/tee_eea/driver/** binary
+vendor/tee_eea/tui/resolution_common/** binary
+vendor/tee_eea/* binary
+vendor/tee_eea/driver/* binary
+vendor/tee_eea/tui/resolution_common/* binary
