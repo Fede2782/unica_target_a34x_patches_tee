@@ -14,6 +14,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - model: "SM-A346B"
+            csc: "EUX"
+            omc: "OXM"
+            imei: "351648447351835"
+            dir: "tee_eea"
           # A34X_SEA_OPEN
           - model: "SM-A346E"
             csc: "INS"

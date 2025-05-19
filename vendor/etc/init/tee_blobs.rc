@@ -1,5 +1,5 @@
 # SM-A346B (Europe)
-on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=EEAVER
+on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=A346BXXS9CYD1
     # TEEgris
     mount none /vendor/tee_eea /vendor/tee bind
 
