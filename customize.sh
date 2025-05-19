@@ -1,3 +1,5 @@
+SKIPUNZIP=1
+
 # Move current to eea
 mv -f "$WORK_DIR/vendor/tee" "$WORK_DIR/vendor/tee_eea"
 sed -i "s./vendor/tee./vendor/tee_eea.g" "$WORK_DIR/configs/file_context-vendor"
