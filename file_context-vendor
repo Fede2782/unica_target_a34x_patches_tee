@@ -97,6 +97,7 @@
 /vendor/tee_eea/tui/resolution_common u:object_r:tee_file:s0
 /vendor/tee_eea/tui u:object_r:tee_file:s0
 /vendor/tee_eea u:object_r:tee_file:s0
+/vendor/tee_kor/00000000-0000-0000-0000-4d7073534d43 u:object_r:tee_file:s0
 /vendor/tee_kor/00000000-0000-0000-0000-000000010081 u:object_r:tee_file:s0
 /vendor/tee_kor/00000000-0000-0000-0000-000000020081 u:object_r:tee_file:s0
 /vendor/tee_kor/00000000-0000-0000-0000-000000534b4d u:object_r:tee_file:s0
@@ -127,7 +128,6 @@
 /vendor/tee_kor/00000000-4d54-4b5f-4246-534d454d5441 u:object_r:tee_file:s0
 /vendor/tee_kor/00000000-4d54-4b5f-4246-57564e544100 u:object_r:tee_file:s0
 /vendor/tee_kor/00000000-4d54-4b5f-4246-72706d627461 u:object_r:tee_file:s0
-/vendor/tee_kor/08040000-0000-0000-0000-000000001319 u:object_r:tee_file:s0
 /vendor/tee_kor/driver/00000000-0000-0000-0000-494363447256 u:object_r:tee_file:s0
 /vendor/tee_kor/driver/00000000-0000-0000-0000-4d53546d7374 u:object_r:tee_file:s0
 /vendor/tee_kor/driver/00000000-0000-0000-0000-564c544b4456 u:object_r:tee_file:s0
@@ -135,8 +135,6 @@
 /vendor/tee_kor/driver/00000000-4d54-4b5f-4246-445248444350 u:object_r:tee_file:s0
 /vendor/tee_kor/driver/00000000-4d54-4b5f-4246-534d45647276 u:object_r:tee_file:s0
 /vendor/tee_kor/driver/00000000-4d54-4b5f-4246-57564e647276 u:object_r:tee_file:s0
-/vendor/tee_kor/driver/08050000-0000-0000-0000-000000001319 u:object_r:tee_file:s0
-/vendor/tee_kor/driver/18d9f073-18a5-4ade-9def-875e07f7f293_ u:object_r:tee_file:s0
 /vendor/tee_kor/driver u:object_r:tee_file:s0
 /vendor/tee_kor/ffffffff-0000-0000-0000-000000000030 u:object_r:tee_file:s0
 /vendor/tee_kor/tui/resolution_common/ID00000100 u:object_r:tee_file:s0
