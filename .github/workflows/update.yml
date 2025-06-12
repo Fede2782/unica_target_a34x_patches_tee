@@ -21,8 +21,8 @@ jobs:
             dir: "tee_eea"
           # A34X_SEA_OPEN
           - model: "SM-A346E"
-            csc: "INS"
-            omc: "ODM"
+            csc: "EGY"
+            omc: "OJM"
             imei: "350386300261830"
             dir: "tee_sea"
           - model: "SM-A346M"
