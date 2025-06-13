@@ -26,7 +26,7 @@ jobs:
             imei: "350386300261830"
             dir: "tee_sea"
           - model: "SM-A346M"
-            csc: "MXO"
+            csc: "TPA"
             omc: "OWO"
             imei: "350650060111117"
             dir: "tee_latam"
