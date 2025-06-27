@@ -1,3 +1,8 @@
+# Fede2782 (C) 2025. All rights reserved.
+# This software is proprietary and confidential. You may not copy, modify, distribute, 
+# or use any part of this project without explicit permission from the author
+# except where explicitly stated otherwise.
+
 # SM-A346B (Europe)
 on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=A346BXXU9DYE7
     # TEEgris
