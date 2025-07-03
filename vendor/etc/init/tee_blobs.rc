@@ -4,7 +4,7 @@
 # except where explicitly stated otherwise.
 
 # SM-A346B (Europe)
-on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=A346BXXU9DYE7
+on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=A346BXXU9DYF4
     # TEEgris
     mount none /vendor/tee_eea /vendor/tee bind
 
