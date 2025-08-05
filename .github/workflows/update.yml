@@ -71,7 +71,7 @@ jobs:
           sudo apt-get install -y libprotobuf-dev liblz4-tool zip f2fs-tools linux-modules-extra-$(uname -r) python3 python3-venv unzip
           sudo modprobe erofs f2fs
 
-      - name: Install dependencies
+      - name: Install samloader
         if: env.need_update == 1
         run: |
           python3 -m venv py_env
@@ -80,7 +80,17 @@ jobs:
 
       - name: Fetch firmware
         if: env.need_update == 1
-        run: source py_env/bin/activate && mkdir "${{ matrix.model }}_${{ matrix.csc }}" && samloader -m ${{ matrix.model }} -r ${{ matrix.csc }} -i ${{ matrix.imei }} download -O "${{ matrix.model }}_${{ matrix.csc }}" && cd "${{ matrix.model }}_${{ matrix.csc }}" && unzip "*.zip" && rm -rf "*.zip"
+        run: |
+          source py_env/bin/activate 
+          mkdir "${{ matrix.model }}_${{ matrix.csc }}" 
+          samloader -m ${{ matrix.model }} -r ${{ matrix.csc }} -i ${{ matrix.imei }} download -O "${{ matrix.model }}_${{ matrix.csc }}" 
+          cd "${{ matrix.model }}_${{ matrix.csc }}" 
+          unzip "*.zip" 
+          rm -rvf "*.zip"
+          mv -v "*.md5" ../
+          rm -rf "${{ matrix.model }}_${{ matrix.csc }}"
+          deactivate
+          rm -rf py_env
 
       - name: Get path of files
         if: env.need_update == 1
