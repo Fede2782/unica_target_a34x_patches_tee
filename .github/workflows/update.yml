@@ -80,7 +80,7 @@ jobs:
 
       - name: Fetch firmware
         if: env.need_update == 1
-        run: source py_env/bin/activate && mkdir "${{ matrix.model }}_${{ matrix.csc }}" && samloader -m ${{ matrix.model }} -r ${{ matrix.csc }} -i ${{ matrix.imei }} download -O "${{ matrix.model }}_${{ matrix.csc }}" && cd "${{ matrix.model }}_${{ matrix.csc }}" && unzip "*.zip" && rm "*.zip"
+        run: source py_env/bin/activate && mkdir "${{ matrix.model }}_${{ matrix.csc }}" && samloader -m ${{ matrix.model }} -r ${{ matrix.csc }} -i ${{ matrix.imei }} download -O "${{ matrix.model }}_${{ matrix.csc }}" && cd "${{ matrix.model }}_${{ matrix.csc }}" && unzip "*.zip" && rm -rf "*.zip"
 
       - name: Get path of files
         if: env.need_update == 1
