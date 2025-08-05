@@ -24,6 +24,6 @@ on early-fs && property:ro.boot.em.model=SM-A346N && property:ro.boot.bootloader
     mount none /vendor/tee_kor /vendor/tee bind
 
 # SM-A3460
-on early-fs && property:ro.boot.em.model=SM-A3460 && property:ro.boot.bootloader=A3460ZHU9DYF4
+on early-fs && property:ro.boot.em.model=SM-A3460 && property:ro.boot.bootloader=A3460ZHSADYG1
     # TEEgris
     mount none /vendor/tee_chn /vendor/tee bind
