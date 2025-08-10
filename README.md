@@ -1,7 +1,8 @@
 # Multi-TEE support patch for a34x
 
 Check currently supported bootloader versions: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/supported_bootloaders)
-Check changelog: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/CHANGELOG.md)
+
+Check changelog and the bootloader versions supported in each Multi-TEE version: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/CHANGELOG.md)
 
 To check your bootloader version simply run the following command in Termux or ADB shell, then check if the Multi-TEE version your ROM has supports that bootloader version:
 ```
