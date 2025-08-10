@@ -1,6 +1,12 @@
 # Multi-TEE support patch for a34x
 
 Check currently supported bootloader versions: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/supported_bootloaders)
+Check changelog: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/CHANGELOG.md)
+
+To check your bootloader version simply run the following command in Termux or ADB shell, then check if the Multi-TEE version your ROM has supports that bootloader version:
+```
+getprop ro.boot.bootloader
+```
 
 This patches are made for UN1CA build system and currently work only with API 35 vendor (used in One UI 7 and later) of Galaxy A34 5G. 
 
