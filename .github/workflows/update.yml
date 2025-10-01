@@ -14,32 +14,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - model: "SM-A346B"
-            csc: "EUX"
-            omc: "OXM"
-            imei: "351648447351835"
-            dir: "tee_eea"
-          # A34X_SEA_OPEN
           - model: "SM-A346E"
-            csc: "EGY"
-            omc: "OJM"
+            csc: "XNZ"
+            omc: "OLM"
             imei: "350386300261830"
-            dir: "tee_sea"
-          - model: "SM-A346M"
-            csc: "TPA"
-            omc: "OWO"
-            imei: "350650060111117"
-            dir: "tee_latam"
-          - model: "SM-A346N"
-            csc: "KOO"
-            omc: "OKR"
-            imei: "354269781234565"
-            dir: "tee_kor"
-          - model: "SM-A3460"
-            csc: "TGY"
-            omc: "OZS"
-            imei: "352496600123453"
-            dir: "tee_chn"
+            dir: "tee_sea_august"
 
     steps:
       - name: Checkout repo
