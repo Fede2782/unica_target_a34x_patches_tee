@@ -1,8 +1,8 @@
 # Multi-TEE support patch for a34x
 
-Check currently supported bootloader versions: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/supported_bootloaders)
+Check currently supported bootloader versions: [here](https://github.com/UN1CA/target_a34x_patches_tee/blob/main/supported_bootloaders)
 
-Check changelog and the bootloader versions supported in each Multi-TEE version: [here](https://github.com/Fede2782/unica_target_a34x_patches_tee/blob/main/CHANGELOG.md)
+Check changelog and the bootloader versions supported in each Multi-TEE version: [here](https://github.com/UN1CA/target_a34x_patches_tee/blob/main/CHANGELOG.md)
 
 To check your bootloader version simply run the following command in Termux or ADB shell, then check if the Multi-TEE version your ROM has supports that bootloader version:
 ```
@@ -13,7 +13,7 @@ This patches are made for UN1CA build system and currently work only with API 35
 
 Contents of this repository should be cloned in the `target/a34x/patches/tee` folder. You can use the following command to set them up in your UN1CA-based environment as long as `a34x` is your target.
 ```
-git clone https://github.com/Fede2782/unica_target_a34x_patches_tee target/a34x/patches/tee
+git clone https://github.com/UN1CA/target_a34x_patches_tee target/a34x/patches/tee
 ```
 
 They make it possible to support booting on multiple bootloader versions (so multiple variants) by shipping different TEE blobs which are dynamically mounted at boot time. TEEGris on A34 requires the version signature of each TA to match with the version of the bootloader.
